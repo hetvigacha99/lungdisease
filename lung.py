@@ -9,7 +9,7 @@ import numpy as np
 import streamlit as st
 import pickle
 
-loaded_model=pickle.load(open("D:/internship/sav_files/lungcancer.sav",'rb'))
+loaded_model=pickle.load(open("lungcancer.sav",'rb'))
 
 def survival_prediction(input_data):
     input_data_arr=np.asarray(input_data)
